@@ -5,7 +5,12 @@ import PIL.Image as Image
 from os import listdir
 import math
 
-itchat.auto_login(enableCmdQR=True)
+# old itchat.auto_login(enableCmdQR=True)
+'''
+New for Linux and Mac 
+
+'''
+itchat.auto_login(hotReload=True,enableCmdQR=2)
 
 friends = itchat.get_friends(update=True)[0:]
 
